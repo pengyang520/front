@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../fontawsome/css/all.css">
+    <style>
+            .clearfix::before,
+            .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+            }
+            
+            .topOuter{
+                background-color: #E3E4E5;
+                border-bottom: 1px #ddd solid;
+                font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+            }
+
+            .outer{
+                width:1190px;
+                height: 30px;
+                margin: 0 auto;
+                line-height: 30px;
+            }
+
+            .address{
+                float: left;
+                position: relative;
+            }
+
+            .address i{
+                color:#F10215;
+                font-size: 14px;
+            }
+
+            .address:hover .city-list{
+                display: block;
+            }
+
+            .operation{
+                float: right;
+            }
+
+            .operation i{
+                color:#999;
+            }
+
+            .operation>li{
+                list-style: none;
+                float: left;
+            }
+
+            a{
+                text-decoration: none;
+                color: #999;
+            }
+
+            .fengexian{
+                background-color: #CCC;
+                width: 1px;
+                margin:10px 13px;
+                height: 10px;
+            }
+
+            .city{
+                z-index: 9999;
+                padding:0 10px;
+                padding-bottom: 1px;
+                position: relative;
+            }
+
+            .address:hover .city{
+                background-color: white;
+            }
+
+            .city-list{
+                top:29px;
+                z-index: 999;
+                display: none;
+                border: 2px #E3E4E5 solid;
+                width:320px;
+                height: 436px;
+                background-color: white;
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <div class="topOuter">
+        <div class="outer clearfix">
+            <div class="address">
+                <div class="city">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="JavaScript:;">北京</a>
+                </div>
+                <div class="city-list">
+                </div>
+            </div>
+            <ul class="operation clearfix">
+                <!-- 分割线 -->
+                <li>
+                    <a href="JavaScript:;">你好，请登录</a>
+                    &nbsp;
+                    <a href="JavaScript:;">免费注册</a>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">我的订单</a>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">我的京东</a><i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">京东会员</a>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">企业采购</a><i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">客服服务</a><i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">网站导航</a><i class="fas fa-angle-down"></i>
+                </li>
+                <li class="fengexian"></li>
+                <li>
+                    <a href="JavaScript:;">手机京东</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

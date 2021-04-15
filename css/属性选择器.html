@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*[属性名] 选择含有指定属性的元素
+    [属性名=属性值] 含有指定属性和属性值的元素
+    */
+    [title]{
+
+    }
+    [title=abc]{
+
+    }
+    /* [属性名^=属性值] 以abc开头 */
+    [title^=abc]{
+
+}
+    /* [属性名$=属性值] 以abc结尾 */
+    [title$=abc]{
+
+}
+ /* [属性名*=属性值] 任意位置*/
+ [title*=abc]{
+
+}
+</style>
+<body>
+    <p title="abc">少小离家老大回</p>
+    <p title="abcd">111</p>
+    <p title="abcde">222</p>
+</body>
+</html>

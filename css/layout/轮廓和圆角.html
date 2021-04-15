@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* outline:用来设置元素的轮廓线，用法和border相同
+            和border不同点为outline不会影响轮廓的可见框的大小（不会影响元素的布局）
+            */
+            outline: 10px red solid;
+
+            /* 设置元素的阴影效果，不会影响元素的布局box-shadow 
+            第一个值：左侧偏移量：正值左侧移动，赋值向右移动
+            第二个值：垂直偏移量，正值向下移动，负值向上移动
+            第三个值：模糊半径
+            第四个值：颜色
+            */
+            box-shadow: 10px 10px 10px black;
+
+
+        }
+
+        .box2{
+            width:200px;
+            height: 200px;
+            background-color: orange;
+            /* border-radius:用来设置圆角 设置原的半径大小,从左上顺时针指定四个
+            三个值：左上 右上/左下 右下
+            两个值：左上/右下 右上/左下 
+            一个值：所有
+
+            
+
+            在W3C上查border-radius属性时，会发现上面描述的语法是这样的：
+
+　　　　　　 border-radius: 1-4 length|% / 1-4 length|%;
+ 　　       这是border-radius的完整写法，我们平时的写法其实都是简写，
+            平时我们写的border-radius : 50px，其实完整的写法应该是：
+　　　　     border-radius : 50px 50px 50px 50px / 50px 50px 50px 50px;
+            “/”前的四个数值表示圆角的水平半径，后面四个值表示圆角的垂直半径
+
+
+            下面的这个也是椭圆，记得不要忘了  /
+            border-radius：20px / 40px
+            
+            */
+            /* border-top-left-radius: ; 左上角
+            border-top-right-radius: ;右上角
+            border-bottom-left-radius: ; 左下角
+            border-bottom-right-radius: ;  右下角*/ 
+            /* 只有一个值，则为正圆，有两个值，两个值都相同为正圆，
+            两个值不相同为椭圆（x水平方向的半径,y垂直方向的半径） */
+            /* border-top-left-radius: 50px 100px; */
+            border-radius: 50px / 40px;
+
+            /* 将元素设置为一个圆形 
+             border-radius: 50%; */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+    <div class="box2"></div>
+</body>
+</html>

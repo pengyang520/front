@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 伪类:不存在的类，特殊的类，用来描述元素的（特殊状态） */
+        /* 伪类一般情况下，：开头
+        :first-child  第一个子元素
+        :last-child 最后一个子元素
+        :nth-child(2) 可以选择第几个，这个是第2个，取值范围从1开始
+                                    2n或者(even)：表示选中偶数的元素
+                                    2n+1或者(odd):奇数元素
+                                    以上这些伪类都是根据所有元素排序
+                                    n还可以是关键字，公式
+                                        
+                                    
+                                    在同类型中排序的为：
+                                    first-of-type
+                                        last-of-type
+                                        nth-of-type
+
+
+
+        :not(:nth-child(2))否定                                
+        */
+        ul>li:first-child{
+
+        }
+        ul>li:last-child{
+
+        }
+        ul>li:nth-child(2){
+
+}
+
+    .testType>li:nth-child(2n){
+        width: 100px;
+        height: 100px; 
+        background-color: yellow;
+    }
+
+    </style>
+</head>
+<body>
+    <ul class="testType">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+
+            /* 内容区（content）：元素中的所有的子元素（文字和子元素）
+            内容区：由width（宽度）和height（高度）设置大小
+             */
+            width:200px;
+            height: 200px;
+            background-color: brown;
+
+            /* 
+            边框(border)：三个参数缺一不可，
+            border-width：边框的宽度，不写默认值一般为3，但是还是最好自己指定
+            border-color：省略为color属性的颜色值
+            border-style：边框的样式:实现虚线，默认值为none,无边框
+                solid 实线
+                dotted 点状虚线
+                dashed 虚线
+                double 双线
+            边框大小会影响盒子的大小
+
+                            border-width：四个方向 上 右 下 左
+                            三个值：上 左右 下
+                            两个值： 上下 左右
+                            一个值：上下左右
+                            border-width:10px 20px 30px 40px；
+
+                            除了border-width还有一组border-xxx-width
+                            xxx可以是top left bottom left
+                            用来单独指定某一个边的宽度
+
+                            color和style同上
+
+
+            border简写属性，可以同时设置width，color，style,没有先后顺序
+            简写属性还有：
+            border-top：
+            border-left：等
+            这些是设置一个边的width，color，style,没有先后顺序
+
+            只有一个边跟其他三个表不同可以
+            border：10px orange silid;
+            border-left：none;
+
+            border：10px orange silid;
+             */
+             border-width: 10px;
+            border-color: blue;
+            border-style: solid;
+
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子模型
+            css将页面中所有的元素都设置成了一个矩形的盒子（无论块、行内元素都是矩形）
+            将元素设置为矩形的盒子后，对页面的布局就变成将不同的盒子摆放到不同的位置
+            内容区（content）
+            内边距（padding）
+            边框（border）
+            外边距（margin）
+
+    -->
+
+    <div class="box1">aaa</div>
+</body>
+</html>

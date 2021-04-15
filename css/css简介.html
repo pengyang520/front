@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 只能当前页面使用 -->
+    <style>
+        /*css选择器  */
+        p{color: red;font-size: 60px;}
+    </style>
+
+
+<link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <!-- css:层叠样式表 -->
+    <!-- 网页实际上是多层结果，可以为每一层设置样式，但是看到的是俯视图 -->
+    
+    
+    <!-- 第一种：
+        标签内部style（内联样式，行内样式）
+        问题：
+        只能对一个标签生效，当样式发生变化时要一个个修改
+        不推荐使用，开发时绝对不用内联样式
+        第二中：
+        head的style标签中
+        第三种：（最佳实践）
+        可以将css样式编写在一个外部css文件中
+        用link标签进行引入
+        可以在多个网页中使用
+        将样式编写到css文件中可以使用到浏览器的缓存机制，从而加快网页的加载速度，提高用户体验
+    -->
+    
+    <p style="color: red;font-size: 60px;">少小离家老大回，乡音无改鬓毛衰</p>
+    <p style="color: red;font-size: 60px;">11</p>
+    <p>22</p>
+</body>
+</html>

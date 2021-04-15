@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../reset/reset.css">
+<style>
+    .clearfix::before,
+            .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+            }
+
+    .div1{
+       float: left; 
+       background-color: red;
+       border: 5px blue solid;
+       padding: 5px;
+       background-clip:content-box;
+       background-position: 50px 300px ;
+       width: 100px;
+       height: 100px;
+    }
+
+    .div2{
+       float: right; 
+       background-color: blue;
+       width: 100px;
+       height: 100px;
+    }
+
+</style>
+<body>       
+    <div class="div0 clearfix">
+        <div class="div1"></div>
+    <ul class="div2"></ul>
+    </div>
+
+            
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../fontawsome/css/all.css">
+    <style>
+        .outer{
+            position: relative;
+            width: 300px;
+            margin: auto;
+        }
+
+        .inner{
+            position:absolute;
+        }
+        img{
+            width: 300px;
+        }
+
+        ul{
+            z-index: 10;
+            top:210px;
+            left:-40px;
+            position: absolute;
+        }
+
+        li{
+            list-style: none;
+            font-size: 2rem;
+            float: left;
+            width:8px;
+            height:8px;
+            margin-left: 5px;
+            background-color: blue; 
+            border-radius: 50%;
+        }
+
+        li:hover{
+            outline: 2px red solid;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="outer">
+        <div class="inner">
+            <a href="javascript:;">
+                <img class="img" src="./京东轮播图/1.webp" alt="">
+            </a>
+        </div>
+        <div class="inner">
+            <a href="javascript:;">
+                <img class="img" src="./京东轮播图/2.webp" alt="">
+            </a>
+        </div>
+        <div class="inner">
+            <a href="javascript:;">
+                <img class="img" src="./京东轮播图/3.webp" alt="">
+            </a>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

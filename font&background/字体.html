@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* @font-face可以将服务器中的字体提供给用户使用
+        问题：
+            1、加载速度问题
+            2、版权问题
+            3、字体格式
+         */
+        @font-face {
+            /* 指定字体名称 */
+            font-family: myfont;
+            /* 服务器中字体的路径 */
+            src: url();
+        }
+
+
+        p{
+            /* 字体相关的样式 
+            color:设置字体颜色
+            font-size：字体大小
+                    单位：em
+                        rem
+            font-family：字体族（字体样式）
+                    可选值：
+                    serif：衬线字体
+                    sans-serif：非衬线字体
+                    monospace: 等宽字体
+
+                    可以同时制定多个字体，多个字体间用，号隔开，字体生效时优先使用第一个，第一个无法
+                    则使用第二个，依此类推
+
+
+            */
+            color:red;
+            font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气真不错</p>
+</body>
+</html>

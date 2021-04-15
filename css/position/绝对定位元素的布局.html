@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+          width:500px;
+          height: 500px;  
+          background-color: #bfa;
+        }
+
+        .box2{
+          widows: 100px;
+          height: 100px;  
+          background-color: orange;
+          position: absolute;
+          /* 开启绝对定位之后：
+          水平反向从七个值之和=包含块的宽度变成了需要加上
+          left+right
+
+          如果没有auto则自动调整right值以使等式成立
+          left和right的默认值为auto，则等式不满足时会默认调整这两个值————如果想通过margin-left、margin-right
+          使元素水平居中的话需要设置left、right为0
+
+            垂直方向布局必须满足：
+            top+(margin-top/或bottom)+(padding-top/bottom)+(border-top/bottom)+height+bottom=包含块高度
+
+            如果没有auto则自动调整bottom值以使等式成立
+
+            可以实现垂直居中，看下面
+
+            绝对定位可以使元素垂直、水平双方向居中（在包含块的中间）
+
+           */
+             left: 0;   
+             right: 0;
+             top: 0;
+             bottom: 0;
+             /* 四个方向都是auto */
+             margin:auto;
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
